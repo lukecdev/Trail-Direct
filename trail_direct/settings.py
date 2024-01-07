@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'profiles',
+    'bag',
    
     # Other
     'crispy_forms',
@@ -81,6 +82,8 @@ TEMPLATES = [
                 'django.template.context_processors.request', # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
+                'bag.contexts.bag_contents', 
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -166,3 +169,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Stripe
+FREE_DELIVERY_THRESHOLD = 50
+STANDARD_DELIVERY_PERCENTAGE = 10
+
