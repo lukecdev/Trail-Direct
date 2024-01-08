@@ -139,7 +139,12 @@
     <script>
         $(document).ready(function() {
             $('.toast').toast('show');
-        });
+        
+
+        setTimeout(function() {
+            toast.hide();
+        }, 6000);
+    });
     </script>
     {% endblock %}
     </main>
