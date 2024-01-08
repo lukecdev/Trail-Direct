@@ -1,4 +1,4 @@
-'from django.apps import AppConfig
+'from django.apps import AppConfig'
 
 
 class CheckoutConfig(AppConfig):
@@ -6,4 +6,3 @@ class CheckoutConfig(AppConfig):
 
     def ready(self):
         import checkout.signals
-        
