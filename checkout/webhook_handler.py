@@ -74,7 +74,7 @@ class StripeWH_Handler:
                 profile.default_county = shipping_details.address.state
                 profile.save()
         
-         order_exists = False
+        order_exists = False
         attempt = 1
         while attempt <= 5:
             try:
