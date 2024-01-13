@@ -18,14 +18,12 @@ import json
 @require_POST
 def cache_checkout_data(request):
     try:
-        client_secret = request.POST.get('client_secret')
-        if client_secret:
-            pid = client_secret.split('_secret')[0]
-            stripe.api_key = settings.STRIPE_SECRET_KEY
-            stripe.PaymentIntent.modify(pid, metadata={
-                'bag': json.dumps(request.session.get('bag', {})),
-                'save_info': request.POST.get('save_info'),
-                'username': request.user,
+        pid = request.POST.get('client_secret').split('_secret')[0]
+        stripe.api_key = settings.STRIPE_SECRET_KEY
+        stripe.PaymentIntent.modify(pid, metadata={
+            'bag': json.dumps(request.session.get('bag', {})),
+            'save_info': request.POST.get('save_info'),
+            'username': request.user,
         })
         return HttpResponse(status=200)
     except Exception as e:
@@ -39,7 +37,6 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-        
         bag = request.session.get('bag', {})
 
         form_data = {
@@ -53,6 +50,7 @@ def checkout(request):
             'street_address2': request.POST['street_address2'],
             'county': request.POST['county'],
         }
+
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save(commit=False)
@@ -180,7 +178,6 @@ def checkout_success(request, order_number):
     template = 'checkout/checkout_success.html'
     context = {
         'order': order,
-        
     }
 
     return render(request, template, context)
