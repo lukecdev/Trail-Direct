@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['https://trail-direct-77691eb3f453.herokuapp.com/','8000-lukecdev-traildirect-3ki7cfcil7r.ws-eu107.gitpod.io']
 
