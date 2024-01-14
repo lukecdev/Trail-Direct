@@ -3,8 +3,7 @@ html {
 }
 
 body {
-    background-color: #aab7c4;
-    /*background: url('/media/home-page-bike.jpg') no-repeat center center fixed;*/ 
+    background: #aab7c4; 
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
