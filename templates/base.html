@@ -40,14 +40,9 @@
   <body>
     <header class="container-fluid">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Trail</strong>Direct</h2>
-                </a>
-            </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
-                    <div class="input-group w-100">
+                    <div class="input-group w-50">
                         <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
@@ -58,7 +53,12 @@
                         </div>
                     </div>
                 </form>
+            </div><div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font text-black my-0"><strong>Trail</strong>Direct</h2>
+                </a>
             </div>
+
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
@@ -112,7 +112,7 @@
             </div>            
         </div>
     </header>
-    <main>
+    
         {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -149,7 +149,19 @@
     });
     </script>
     {% endblock %}
-    </main>
     
+    <!--Footer section -->
+    <div class="container">
+        <footer class="py-3 my-4 footer">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+      </div>
   </body>
 </html>
