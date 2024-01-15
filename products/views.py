@@ -3,8 +3,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from checkout.models import Order, OrderLineItem
+from profiles.models import UserProfile
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
@@ -135,3 +137,24 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+def product_review(user, product):
+    """
+    Checks if user bought product before review
+    """
+    order_line_items = OrderLineItem.objects.filter(
+        order__user_profile__user=user, product=product
+    )
+    return (
+        order_line_items.exists()
+    ) # checks order for item purchased 
+
+@login_required
+def delete_review(request, review_id):
+    """
+    If user is a superuser they can delete a review
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, "Review is now deleted")
+    return redirect("product_detail", product_id=review.product.id)
