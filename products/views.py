@@ -157,4 +157,42 @@ def delete_review(request, review_id):
     review = get_object_or_404(Review, pk=review_id)
     review.delete()
     messages.success(request, "Review is now deleted")
-    return redirect("product_detail", product_id=review.product.id)
+    return redirect("home")
+
+@login_required
+def add_review(request, product_id):
+    """ 
+    Add a new review for product
+    """
+    product = get_object_or_404(Product, pk=product_id)
+    user = request.user.userprofile
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+    form = ReviewForm()
+    if request.method == 'POST':
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+
+            review = form.save(commit=False)
+            review.product = product
+            review.user = user
+            review.save()
+            messages.success(request, 'Review added successfully.')
+            return redirect(reverse('product_detail', args=[product.id]))
+
+            
+        else:
+            messages.error(request, 'Failed to add review. Please ensure the form is valid.')
+
+        
+    
+        
+    template = 'products/add_review.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
