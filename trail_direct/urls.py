@@ -1,4 +1,5 @@
 from django.contrib import admin
+from .views import handler404
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
@@ -12,3 +13,5 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'boutique_ado.views.handler404'
