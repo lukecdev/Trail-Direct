@@ -10,6 +10,10 @@ body {
     font-family: 'Lato';
 }
 
+#topnav {
+    background-color: #077445;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;

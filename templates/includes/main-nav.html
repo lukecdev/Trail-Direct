@@ -1,0 +1,59 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold text-black mr-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                All
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&directions=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&directions=asc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&directions=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold text-black mr-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                Parts
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="parts-link">
+                <a href="{% url 'products' %}?category=tyres" class="dropdown-item">Tyres</a>
+                <a href="{% url 'products' %}?category=brakes" class="dropdown-item">Brakes</a>
+                <a href="{% url 'products' %}?category=pedals" class="dropdown-item">Pedals</a>
+                <a href="{% url 'products' %}?category=tyres,brakes,pedals" class="dropdown-item">All Clothing</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <li class="list-inline-item nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold text-black mr-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                Tools
+                </a>
+            <div class="dropdown-menu border-0" aria-labelledby="tools-link">
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">Tools</a>
+                <a href="{% url 'products' %}?category=tools" class="dropdown-item">All Homeware</a>
+            </div>
+        </li>
+
+        <li class="list-inline-item nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold text-black mr-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                Accessories
+                </a>
+            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+                <a href="{% url 'products' %}?category=Accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=Accessories" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="support-link">
+                Support
+            </a>
+        </li>
+    </ul>
+</div>
