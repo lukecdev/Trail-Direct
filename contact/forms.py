@@ -16,3 +16,19 @@ class ContactForm(ModelForm):
         }
 
          self.fields['email'].widget.attrs['autofocus'] = True
+
+class ContactGeneralForm(ModelForm):
+    class Meta:
+        model = Contact
+        fields = ("email", "message")
+
+    def __init__(self, *args, **kwargs):
+         super().__init__(*args, **kwargs)
+         placeholders = {
+            'email': 'Email',
+            
+            'message': 'Message',
+            
+        }
+
+         self.fields['email'].widget.attrs['autofocus'] = True

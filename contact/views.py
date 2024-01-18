@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .forms import ContactForm
+from .forms import ContactForm, ContactGeneralForm
 from django.contrib import messages
 
 def contact(request):
@@ -24,6 +24,29 @@ def contact(request):
         form = ContactForm()
 
     template = 'contact/contact.html'
+    context = {
+        'form': form
+    }
+    return render(request, template, context)
+
+def contactgeneral(request):
+    """A view to return contact form and page"""
+    form = ContactGeneralForm()
+
+
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your message has been sent')
+            return redirect(reverse('home'))
+        else:
+            messages.error(request,
+                           'Something went wrong. Please try again later')
+    else:
+        form = ContactForm()
+
+    template = 'contact/contact-general.html'
     context = {
         'form': form
     }

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'contact/css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row d-flex justify-content-center mt-3">
+
+        <div class="card m-2 text-center" style="max-width: 18rem;">
+            <div class="card-header"><i class="fa-solid fa-envelope fa-2xl"></i></div>
+            <div class="card-body text-dark">
+              <h5 class="card-title">General enquiries</h5>
+              <p>General Contact</p>
+            </div>
+            
