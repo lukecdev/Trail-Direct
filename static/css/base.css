@@ -1,18 +1,27 @@
+
+:root {
+    --green: #077445;
+    --white: #ffff;
+    --background:#6d6c6c;
+}
+
 html {
     height: 100%;
 }
 
+#topnav {
+    color: var(--green);
+}
+
 body {
-    background: #ae5b6e; 
+    background-color: var(--background); 
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
 }
 
-#topnav {
-    background-color: #077445;
-}
+
 
 /* from Bulma */
 .icon {
