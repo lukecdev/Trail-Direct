@@ -13,6 +13,11 @@ html {
     color: var(--green);
 }
 
+.logo-img {
+    width: 50%;
+    height:50%
+}
+
 body {
     background-color: var(--background); 
     background-size: cover;
