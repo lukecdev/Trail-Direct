@@ -51,3 +51,7 @@ def contactgeneral(request):
         'form': form
     }
     return render(request, template, context)
+
+def contactfaq(request):
+
+    return render(request, 'contact/contact-faq.html')

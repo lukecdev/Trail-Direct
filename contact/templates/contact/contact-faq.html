@@ -14,13 +14,94 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row d-flex justify-content-center mt-3">
+    
+    <section class="section-margin-bottom">
+        <div class="container mt-5 text-center">
+            <div class="col-12 mb-4">
+                <h3 class="text-balck">
+                    Shop by Category
+                </h3>
+            </div>  
+        </div>
+        
+        <div class="row mb-5">
+            <div class="container col-sm-4 mb-5">
+            <div class="row justify-content-center ">
 
-        <div class="card m-2 text-center" style="max-width: 18rem;">
-            <div class="card-header"><i class="fa-solid fa-envelope fa-2xl"></i></div>
-            <div class="card-body text-dark">
-              <h5 class="card-title">General enquiries</h5>
-              <p>General Contact</p>
+                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
+                    <div class="card-header">General Contact</div>
+                    <div class="card-body">
+                        <a href="{% url 'contact' %}">General Contact
+                    </div>
+                    
+                    <div class="card"><i class="fa-solid fa-envelope fa-2xl"></i></div>
+                    <p class="font-weight-bold mt-2 text-uppercase">contact</p></a>
+                </div>
+            </div>
+            </div>
+            <div class="container col-sm-4 mb-5">
+            <div class="row justify-content-center ">
+
+                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
+                    <a href="{% url 'contact general' %}">Support
+                    <img src="{{ MEDIA_URL }}home-page-bike (1).jpg" alt="{{ product.name }}" class="img-fluid">
+                    <p class="font-weight-bold mt-2 text-uppercase">Suport</p></a>
+                </div>
+            </div>
             </div>
             
+        </div>
+    </section>
+    <section class="faq">
+        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <p>FAQs</p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <strong>delivery</strong>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Delevery</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <strong>order?</strong>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>order</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <strong>cost?</strong>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>cost</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}         
