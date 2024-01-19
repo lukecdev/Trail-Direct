@@ -10,7 +10,7 @@ html {
 }
 
 .nav-color {
-    color: var(--green);
+    background-color: var(--green);
 }
 
 .logo-img {

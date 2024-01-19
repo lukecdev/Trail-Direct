@@ -38,7 +38,7 @@
     <title>Trail Direct {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
-    <header class="container-fluid nav-color top-nav">
+    <header class="container-fluid top-nav">
         <div id="topnav" class="row nav-color pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="">
@@ -63,26 +63,45 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    
+                    <li class="list-inline-item"> <!-- Admin only navbar menu -->
+                        {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                        <a class="text-black nav-link" href="{% url 'add_product' %}" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fa-solid fa-user-gear"></i></div>
+                                    <p class="my-0">Product Admin</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options"> 
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                    <a href="{% url 'admin:index' %}" class="dropdown-item">Admin</a>
+                        </div>
+                            {% endif %}
+                        {% endif %}
+                    </li>
+
                     <li class="list-inline-item nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
-                        My Account
+                        <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fa-solid fa-circle-user"></i></div>
+                                {% if request.user.is_authenticated %}
+                                    <p class="my-0">My Account</p>
+                                {% else %}
+                                    <p class="my-0">Account</p>
+                                {% endif %}
+                            </div>
                         </a>
 
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                         {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                         {% endif %}
-                    </div>
-                      </li>
-                    <li class="list-inline-item"> 
-                        <a href="{% url 'contact' %}" class="dropdown-item">Contact</a>
+                        </div>
                     </li>
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
@@ -92,7 +111,7 @@
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                        €0.00
                                     {% endif %}
                                 </p>
                             </div>
