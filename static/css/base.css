@@ -199,6 +199,11 @@ body {
   }
   
   /* Allauth form formatting */
+
+  .allauth-form-style {
+    background-color: #17a2b8;
+    margin: 0 auto;
+  }
   
   .allauth-form-inner-content p {
       margin-top: 1.5rem; /* mt-4 */
@@ -263,7 +268,7 @@ body {
       }
   
       .header-container {
-          padding-top: 164px;
+          padding-top: 50px;
       }
   }
   
