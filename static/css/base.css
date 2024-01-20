@@ -26,7 +26,17 @@ body {
     font-family: 'Lato';
 }
 
-
+.hero-image {
+    position: absolute;
+    top: 0;
+    let: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .hero-image img {
+    width: 100%;
+    margin: 0;
+  }
 
 /* from Bulma */
 .icon {
