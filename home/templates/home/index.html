@@ -10,27 +10,29 @@
 {% endblock %}
 
 {% block content %}
-    <section class="main-content ">
+<section class="main-content ">
+    <div class="main-image">
+        <div class="overlay-header"></div>
         <div class="container h-100">
-            <div class="hero-image">
-                <img src="{{ MEDIA_URL }}home-page-bike (1).jpg" alt="home image" class="img-fluid">
-            </div>
             <div class="row h-100">
                 <div class="col-7 col-md-6 my-auto">
+                    <span class="text-black font-weight-bold">Mtb Products</span>
                     <h1 class="display-4 logo-font text-black">
-                        The new collections are here
+                        new products are here
                     </h1>
                     <div class="my-5">
                         <h4>
-                            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                            <a href="{% url 'products' %}"
+                                class="shop-now-button btn btn-lg rounded-5 text-uppercase py-3">Shop Now</a>
                         </h4>
                     </div>
                 </div>
             </div>
         </div>
-    </section>    
+    </div>
+</section>  
 
-    <section class="section-margin-bottom">
+<section class="section-margin-bottom">
         <div class="container mt-5 text-center">
             <div class="col-12 mb-4">
                 <h3 class="text-blue">
@@ -78,5 +80,5 @@
                 <h3><i class="fa-regular fa-newspaper"></i> Newsletter</h3>
                 <p class="index-info-para">Subscribe & receive our most up to date special offers, news & more</p>
             </a>
-    </section>
+</section>
 {% endblock %}
