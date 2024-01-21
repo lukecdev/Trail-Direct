@@ -7,14 +7,18 @@
 
         <div class="col-12 left">
                 <div class="row">
-                
+                {% for post in post_list %}
                 <div class="col-6 col-sm-4">
                     <br>
                     <div class="card mb-4 border" style="width: 22rem;">
                         <div class="card-body">
                             <div class="image-container">
                                 <!-- The featured image/ Placeholder post images -->
-                            
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                                </a>
+                                
+                                
                                 <div class="image-flash">
                                     <p class="author text-muted">Author: {{ post.author }}</p>
                                 </div>
@@ -29,17 +33,16 @@
                             <hr>
                             <div>
                                 <small>
-                                    <!--<a class="link" href="{% url 'update_post' post.slug %}">(Edit Post)</a>
+                                    <a class="link" href="{% url 'update_post' post.slug %}">(Edit Post)</a>
         
-                                    <a class="link" href="{% url 'delete_post' post.slug %}">(Delete Post) </a>-->
+                                    <a class="link" href="{% url 'delete_post' post.slug %}">(Delete Post) </a>
                                 </small>
                             </div>
                             {% endif %}
                             
                             <hr>
                             <!-- Post created date -->
-                            <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
-                                {{ post.number_of_likes }}</p>
+                            <p class="card-text text-muted h6">{{ post.created_on}}</p>
                         </div>
                     </div>
                 </div>

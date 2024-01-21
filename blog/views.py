@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from .models import Post
 from django.urls import reverse_lazy
@@ -6,25 +6,25 @@ from django.urls import reverse_lazy
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "blog.html"
+    template_name = "blog/blog.html"
     paginate_by = 4
 
 
 class PostCreateView(generic.CreateView):
     model = Post
-    template_name = "new_post.html"
+    template_name = "blog/new_post.html"
     fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']
     
 
 
 class UpdatePostView(generic.UpdateView):
     model = Post
-    template_name = "update_post.html"
+    template_name = "blog/update_post.html"
     fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']
 
 class DeletePostView(generic.DeleteView):
     model = Post
-    template_name = "delete_post.html"
+    template_name = "blog/delete_post.html"
     success_url = reverse_lazy('home')
     fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']    
 
@@ -36,7 +36,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
                 
