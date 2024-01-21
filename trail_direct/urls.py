@@ -13,6 +13,8 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('contact/', include('contact.urls')),
+    path('summernote/', include('django_summernote.urls')),
+    path('blog/', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'trail_direct.views.handler404'
