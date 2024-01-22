@@ -119,11 +119,12 @@ body {
 }
 
 .custom-tab {
-    border: #000 solid;
+    box-shadow: 1;
 }
 
 .nav-tabs .nav-link.active {
     font-weight: 500;
+    border: #000 solid
 }
 
 .nav-border {
