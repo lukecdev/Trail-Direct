@@ -10,9 +10,9 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-7 col-md-6 my-auto">
-                    <span class="text-black font-weight-bold">Mtb Products</span>
+                    
                     <h1 class="display-4 logo-font text-black">
-                        new products are here
+                        Best Upgrades to Make!
                     </h1>
                     <div class="my-5">
                         <h4>
@@ -39,40 +39,70 @@
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
-                    <a href="{% url 'products' %}">Test Products
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                    <a href="{% url 'products' %}?category=brakes" class="text-decoration-none text-black">
                     <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
-                    <p class="font-weight-bold mt-2 text-uppercase">testing</p></a>
+                    <p class="font-weight-bold mt-2 text-uppercase">Brakes</p></a>
                 </div>
             </div>
             </div>
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
-                    <a href="{% url 'products' %}">Test Products
-                    <img src="{{ MEDIA_URL }}home-page-bike (1).jpg" alt="{{ product.name }}" class="img-fluid">
-                    <p class="font-weight-bold mt-2 text-uppercase">testing</p></a>
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                    <a href="{% url 'products' %}?category=tyres" class="text-decoration-none text-black">
+                    <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
+                    <p class="font-weight-bold mt-2 text-uppercase">Tyres</p></a>
                 </div>
             </div>
             </div>
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
-                    <a href="{% url 'products' %}">Test Products
-                    <img src="/media/home-page-bike.jpg" class="img-fluid">
-                    <p class="font-weight-bold mt-2 text-uppercase">testing</p></a>
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                    <a href="{% url 'products' %}?category=tools" class="text-decoration-none text-black">
+                    <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
+                    <p class="font-weight-bold mt-2 text-uppercase">Tools</p></a>
                 </div>
             </div>
             </div>
         </div>
     </section>
-    <section class="container-grid p-5 position-relative overflow-hidden section-margin-bottom">
-        <a class="index-info-links" href="{% url 'newsletter' %}"
-                aria-label="takes user to subscribe to newsletter page">
-                <h3><i class="fa-regular fa-newspaper"></i> Newsletter</h3>
-                <p class="index-info-para">Subscribe & receive our most up to date special offers, news & more</p>
-            </a>
-</section>
+
+    <!--Newletter--> <!--https://bbbootstrap.com/snippets/bootstrap-responsive-subscribe-our-newsletter-form-81055470-->
+    {% if not user.is_authenticated %}
+    <section>
+        <div class="newsletter-subscribe mt-5 container">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center newsletter">Subscribe to our Newsletter</h2>
+                    <p class="text-center">Keep upto day with the lastest products and deals!</p>
+                </div>
+                <form action="{% url 'subscribe' %}" method="post">
+                    <div class="row d-flex justify-content-center">
+                        {% csrf_token %}
+            
+                        <div class="col-auto">
+                            <p class="pt-2">Subscribe now to our newsletter</p>
+                        </div>
+            
+                        <div class="col-auto">
+                            <input id="name" name="name" class="form-control" placeholder="Your Name"/>
+                        </div>
+            
+                        <div class="col-auto">
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Email address"/>
+                        </div>
+            
+                        <div class="col-auto">
+                            <button type="submit" class="btn btncolor">
+                                <i class="fa fa-arrow-circle-right fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endif %}
 {% endblock %}

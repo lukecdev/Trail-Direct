@@ -2,7 +2,7 @@
 :root {
     --green: #077445;
     --white: #ffff;
-    --background:#6d6c6c;
+    --background:#c9c6c6;
 }
 
 html {
@@ -34,6 +34,11 @@ body {
     no-repeat;
 }
 
+.newsletter-subscribe {
+    color: #313437;
+    background-color: #ffffff;
+    padding: 55px 74px;
+  }
 
 /* from Bulma */
 .icon {
@@ -83,6 +88,10 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.card-category{
+    border: 1px solid black;
 }
 
 .overlay {
