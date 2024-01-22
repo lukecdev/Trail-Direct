@@ -43,7 +43,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                                             
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0">
@@ -57,6 +57,10 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            <small class="col-2">
+                                                <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">
+                                                    <span class="text">Product Details</span></a>
+                                                </small>
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-4">
                                                     <a class="btn btn-warning mt-2" href="{% url 'edit_product' product.id %}">Edit</a> | 
