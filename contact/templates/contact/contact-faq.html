@@ -16,11 +16,11 @@
 {% block content %}
     
     <section class="section-margin-bottom">
-        <div class="container mt-5 text-center">
-            <div class="col-12 mb-4">
-                <h3 class="text-balck">
-                    Shop by Category
-                </h3>
+        <div class="container mt-1 text-center">
+            <div class="col-12 mb-2">
+                <h2 class="text-black">
+                    <strong>Contact Us</strong>
+                </h2>
             </div>  
         </div>
         
@@ -28,36 +28,41 @@
             <div class="container col-sm-4 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
-                    <div class="card-header">General Contact</div>
-                    <div class="card-body">
-                        <a href="{% url 'contact' %}">General Contact
-                    </div>
-                    
-                    <div class="card"><i class="fa-solid fa-envelope fa-2xl"></i></div>
-                    <p class="font-weight-bold mt-2 text-uppercase">contact</p></a>
-                </div>
+                <div class="card m-2 text-center" style="max-width: 25rem; max-height: 15rem;">
+                    <div class="card-header"><i class="fa-solid fa-envelope fa-2xl"></i></div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">General enquiries</h5>
+                      <p class="card-text">Have a question about our products?.</p>
+                      </div>
+                      <a href="{% url 'contact general' %}" class="btn btn-black rounded-0 text-uppercase">Contact us</a>
+                  </div>
             </div>
             </div>
+
+            
             <div class="container col-sm-4 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto  text-center shadow-lg mb-5">
-                    <a href="{% url 'contact general' %}">Support
-                    <img src="{{ MEDIA_URL }}home-page-bike (1).jpg" alt="{{ product.name }}" class="img-fluid">
-                    <p class="font-weight-bold mt-2 text-uppercase">Suport</p></a>
-                </div>
+                <div class="card m-2 text-center" style="max-width: 25rem; max-height: 15rem;">
+                    <div class="card-header"><i class="fa-brands fa-rocketchat fa-2xl"></i></div>
+                    <div class="card-body text-dark">
+                      <h5 class="card-title">Support</h5>
+                      <p class="card-text">Need support on an order? Please contact a member of our team here.</p>
+                      </div>
+                      <a href="{% url 'contact' %}" class="btn btn-black rounded-0 text-uppercase">Support Email</a>
+                  </div>
             </div>
             </div>
             
         </div>
     </section>
+    <!-- FAQ -->
     <section class="faq">
         
         <div class="container my-5">
-            <div class="row">
-                <div class="col-12">
-                    <p>FAQs</p>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h3><span><strong>Frequently</strong> </span><strong>Asked Questions</strong> </h3><br>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
