@@ -118,6 +118,13 @@ body {
     cursor: pointer;
 }
 
+.nav-border {
+    border: #000 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px
+
+}
+
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
     border-color: #dc3545;
