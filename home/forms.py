@@ -1,10 +1,8 @@
 from django import forms
-from .models import Newsletter
+
+
 
 class NewsletterForm(forms.Form):
-    """
-    Form newsletters subsribers 
-    """
-    class Meta:
-        model = Newsletter
-        fields = ['name', 'email']
+    subject = forms.CharField()
+    receivers = forms.CharField()
+    message = forms.CharField(label="Email content")
