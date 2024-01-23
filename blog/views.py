@@ -13,20 +13,20 @@ class PostList(generic.ListView):
 class PostCreateView(generic.CreateView):
     model = Post
     template_name = "blog/new_post.html"
-    fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']
+    fields = ['title','slug', 'author', 'image', 'excerpt', 'content', 'status']
     
 
 
 class UpdatePostView(generic.UpdateView):
     model = Post
     template_name = "blog/update_post.html"
-    fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']
+    fields = ['title','slug', 'author', 'image', 'excerpt', 'content', 'status']
 
 class DeletePostView(generic.DeleteView):
     model = Post
     template_name = "blog/delete_post.html"
     success_url = reverse_lazy('home')
-    fields = ['title','slug', 'author', 'featured_image', 'excerpt', 'content', 'status']    
+    fields = ['title','slug', 'author', 'image', 'excerpt', 'content', 'status']    
 
 class PostDetail(View):
 

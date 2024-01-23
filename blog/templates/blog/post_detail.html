@@ -7,12 +7,10 @@
     <ul>
         {% if user.is_superuser %}
         <div class="container">
-            <div>
-                <a class="link" href="{% url 'update_post' post.slug %}">Edit Post</a>
-            </div>
-            <div>
-                <a class="link" href="{% url 'delete_post' post.slug %}">Delete Post </a>
-            </div>
+            <small class="ml-2">
+                <a class="btn btn-warning mt-2" href="{% url 'update_post' post.slug %}">Edit Post</a> | 
+                <a class="btn btn-danger mt-2" href="{% url 'delete_post' post.slug %}">Delete Post</a>
+            </small>
         </div>
         <hr>
         {% endif %}
