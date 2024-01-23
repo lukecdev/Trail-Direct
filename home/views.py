@@ -54,6 +54,7 @@ def subscribe(request):
         subscribe_model_instance.name = name
         subscribe_model_instance.email = email
         subscribe_model_instance.save()
+
         messages.success(request, f'{email} email was successfully subscribed to our newsletter!')
         return redirect(request.META.get("HTTP_REFERER", "/"))
 
@@ -67,7 +68,15 @@ def newsletter(request):
             receivers = form.cleaned_data.get('receivers').split(',')
             email_message = form.cleaned_data.get('message')
 
-            mail = EmailMessage(subject, email_message, f"PyLessons <{request.user.email}>", bcc=receivers)
+            for subscriber in SubscribedUsers.objects.all():
+                unsubscribe_link = (
+                    f"http://127.0.0.1:8000/unsubscribe/{subscriber.email}/"
+                )
+                email_message_with_unsubscribe = (
+                    f"{email_message}\n\nUnsubscribe link: {unsubscribe_link}"
+                )
+
+            mail = EmailMessage(subject, email_message, f"TrailDirect <{request.user.email}>", bcc=receivers)
             mail.content_subtype = 'html'
 
             if mail.send():
