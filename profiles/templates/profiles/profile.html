@@ -32,6 +32,7 @@
                 <p><strong>Email:</strong> {{ request.user.email }}</p>
                 <p><strong>Country:</strong> {{ request.user.userprofile.country }}</p>
                 <a href="{% url 'profile_update' %}" class="btn btn-black rounded-0 text-uppercase"><i class="fas fa-user-edit"></i> Update User</a>
+                <a href="{% url 'account_change_password' %}" class="btn btn-black rounded-0 text-uppercase"><i class="fa-solid fa-key"></i> Change Password</a>
             </div>
         </div>
         <div class="row">
@@ -84,6 +85,15 @@
                 </div>
             </div>
         </div>
+        <div class="col-12 col-lg-4">
+            <div class="container mb-2">
+                <div class="row">
+                    <p class="text-muted">Delete Account</p>
+                    <div class="col-10">
+                        <a href="#cancelModal" data-toggle="modal" class="btn btn-black rounded-0 text-uppercase mb-2 w-100 menu-item"><i class="fa-solid fa-trash-can"></i>  Delete Account</a></div>
+                </div>
+            </div>
+        </div>     
 {% endblock %}
 
 {% block postloadjs %}
