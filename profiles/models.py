@@ -26,6 +26,11 @@ class UserProfile(models.Model):
     default_country = CountryField(
         blank_label='Country', null=True, blank=True)
 
+    first_name = models.CharField(max_length=20, blank=True)
+    last_name = models.CharField(max_length=20, blank=True)
+    country = models.CharField(
+        max_length=30, default="Unselected", blank=True)
+
     def __str__(self):
         return self.user.username
 
@@ -38,3 +43,12 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
     instance.userprofile.save()
+
+    def get_date_joined(self):
+        return self.user.date_joined
+
+    def get_last_login(self):
+        return self.user.last_login
+
+    def __str__(self):
+        return self.user.username
