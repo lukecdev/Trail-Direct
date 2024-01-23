@@ -20,6 +20,12 @@ def index(request):
     
     return render(request, "home/index.html")
 
+def privacy_policy(request):
+    """
+    Render privacy_policy.html view
+    """
+    return render(request, "home/info/privacy_policy.html")
+
 def subscribe(request):
     if request.method == 'POST':
         name = request.POST.get('name', None)
