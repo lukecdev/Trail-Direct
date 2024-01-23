@@ -167,17 +167,18 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script>
+    
+        <script>
         $(document).ready(function() {
             $('.toast').toast('show');
         
-
         setTimeout(function() {
             toast.hide();
         }, 6000);
-    });
+        });
     </script>
-    {% endblock %}
+{% endblock %}
+    
     
     <!--Footer section -->
     <section class="footer-dark mt-5">
