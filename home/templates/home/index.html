@@ -6,13 +6,14 @@
 {% block content %}
 <section class="main-content ">
     <div class="main-image">
+        <img class="card-img-top img-fluid" src= "{{ MEDIA_URL }}hero-image.jpg" alt="bike brakes-cover">
         <div class="overlay-header"></div>
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-7 col-md-6 my-auto">
                     
                     <h1 class="display-4 logo-font text-black">
-                        Best Upgrades to Make!
+                        The Best Upgrades to Make!
                     </h1>
                     <div class="my-5">
                         <h4>
@@ -39,9 +40,9 @@
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg mb-5">
                     <a href="{% url 'products' %}?category=brakes" class="text-decoration-none text-black">
-                    <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}brakes-cover.jpg" alt="bike brakes-cover">
                     <p class="font-weight-bold mt-2 text-uppercase">Brakes</p></a>
                 </div>
             </div>
@@ -49,9 +50,9 @@
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg mb-5">
                     <a href="{% url 'products' %}?category=tyres" class="text-decoration-none text-black">
-                    <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
+                    <img class="card-img-top img-fluid" src= "{{ MEDIA_URL }}tyre-cat-cover.jpg" alt="bike tyre-cover">
                     <p class="font-weight-bold mt-2 text-uppercase">Tyres</p></a>
                 </div>
             </div>
@@ -59,9 +60,9 @@
             <div class="container col-sm-3 mb-5">
             <div class="row justify-content-center ">
 
-                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg-black mb-5">
+                <div class="m-3 card-category mx-auto bg-white text-center shadow-lg mb-5">
                     <a href="{% url 'products' %}?category=tools" class="text-decoration-none text-black">
-                    <img class="card-img-top img-fluid" src="https://trail-direct-lcdev.s3.eu-west-1.amazonaws.com/media/brakes-cover.jpg" alt="bike brakes-cover">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}tool-cat.jpg" alt="bike tools-cover">
                     <p class="font-weight-bold mt-2 text-uppercase">Tools</p></a>
                 </div>
             </div>
