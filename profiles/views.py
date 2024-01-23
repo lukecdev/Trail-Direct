@@ -62,7 +62,7 @@ def profile_update(request):
         individual_form = UpdateIndividualForm(instance=profile)
     
     context = {
-        "inindividual_form" : individual_form,
+        "individual_form" : individual_form,
         "orders": orders,
         "form": form,
     }

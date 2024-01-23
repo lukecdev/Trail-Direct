@@ -42,7 +42,8 @@ class UpdateIndividualForm(forms.ModelForm):
         fields = (
             "first_name",
             "last_name",
-             "country",
+            "country",
+             
         )
 
     def __init__(self, *args, **kwargs):
