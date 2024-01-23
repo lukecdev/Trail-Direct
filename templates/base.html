@@ -181,11 +181,18 @@
             <div class="container p-4">
                 
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="{% url 'products' %}" class="nav-link px-2 text-white">Products</a></li>
+            <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link px-2 text-white">Blog</a></li>
+            <li class="nav-item"><a href="{% url 'contactfaq' %}" class="nav-link px-2 text-white">FAQs</a></li>
+            <li class="nav-item"><a href="{% url 'contactfaq' %}" class="nav-link px-2 text-white">Contact</a></li>
+          </ul>
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <h4 class="text-white justify-content-left">Follow us on our socials:</h4>
+            <li class="nav-item px-2"><a href="https://twitter.com/"  target="_blank"><span class="visually-hidden">Visit Twitter account</span><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #63E6BE;"></i></a></li>
+            <li class="nav-item px-2"><a href="https://www.facebook.com/"  target="_blank"><span class="visually-hidden">Visit Facebook account</span><i class="fa-brands fa-facebook fa-xl" style="color: #74C0FC;"></i></a></li>
+            <li class="nav-item px-2"></li><a href="https://www.instagram.com/" target="_blank"><span class="visually-hidden">Visit Instagram account</span><i class="fa-brands fa-square-instagram fa-xl" style="color: #FFD43B;"></i></a></li>
+
           </ul>
           <p class="text-center text-strong">For Educational Purposes Only, No Real Purchase Can Be Made</p>
         </footer>

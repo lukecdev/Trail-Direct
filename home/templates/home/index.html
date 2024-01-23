@@ -12,7 +12,7 @@
             <div class="row h-100">
                 <div class="col-7 col-md-6 my-auto">
                     
-                    <h1 class="display-4 logo-font text-black">
+                    <h1 class="display-4 logo-font text-white">
                         The Best Upgrades to Make!
                     </h1>
                     <div class="my-5">
@@ -77,16 +77,12 @@
             <div class="container">
                 <div class="intro">
                     <h2 class="text-center newsletter">Subscribe to our Newsletter</h2>
-                    <p class="text-center">Keep upto day with the lastest products and deals!</p>
+                    <p class="text-center">Keep upto date with the lastest products and deals!</p>
                 </div>
                 <form action="{% url 'subscribe' %}" method="post">
                     <div class="row d-flex justify-content-center">
-                        {% csrf_token %}
-            
-                        <div class="col-auto">
-                            <p class="pt-2">Subscribe now to our newsletter</p>
-                        </div>
-            
+                        {% csrf_token %}            
+                                    
                         <div class="col-auto">
                             <input id="name" name="name" class="form-control" placeholder="Your Name"/>
                         </div>
