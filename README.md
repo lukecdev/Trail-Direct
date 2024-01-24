@@ -58,18 +58,17 @@
 <br>
 
 |Section|Test Action|Pass/Fail|
-| ---| ---| ---|
-|Navbar|Click on logo in Navbar redirects to Home | Pass|
-||Clicking on the links in Navbar redirects to the correct page | Pass|
-||Clicking on the links in Account redirects to the correct page | Pass|
-||Clicking on the bag icon redirects to shopping bag | Pass|
-|Searchbar|Type keywords returns correct results | Pass|
-|Hero section|Opening Home page the hero section loads as it should | Pass|
-||Click on the shop now button leads to products page | Pass|
-|Catagory Card| Click on the catagory card redirects to the correct catagory of products | Pass|
-|| Click on the product card button add to cart. Ensure the item is added to cart |When clicked each card button adds the correspondint product to cart |Pass|
+| ---| ---|---|
+|Navbar|Click on logo in Navbar redirects to Home |Pass|
+||Clicking on the links in Navbar redirects to the correct page |Pass|
+||Clicking on the links in Account redirects to the correct page |Pass|
+||Clicking on the bag icon redirects to shopping bag |Pass|
+|Searchbar|Type keywords returns correct results |Pass|
+|Hero section|Opening Home page the hero section loads as it should |Pass|
+||Click on the shop now button leads to products page |Pass|
+|Catagory Card| Click on the catagory card redirects to the correct catagory of products |Pass|
 |Newsletter| Enter valid email and a thank you for subscribing text appears |Pass|
-|Footer|The site links in footer open to the relevent pages| Pass|
-||The socail links in footer open to the external pages| Pass|
+|Footer|The site links in footer open to the relevent pages|Pass|
+||The socail links in footer open to the external pages|Pass|
 
 </details>
