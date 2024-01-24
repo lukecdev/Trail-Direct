@@ -27,6 +27,7 @@
 
 </details>
 
+--
 
 <details>
 <summary>Home Page Tests</summary>
@@ -133,5 +134,17 @@
 ||logged-in users can change password |Pass|
 ||logged-in users can delete profile |Pass|
 ||logged-in users can view previous orders |Pass|
+
+</details>
+
+### Google Lighthouse Testing
+
+> index.html
+
+<details>
+<summary>Index.html Screenshot</summary>
+  <br>
+
+  ![Google Lighthouse Index](media/readme)
 
 </details>
