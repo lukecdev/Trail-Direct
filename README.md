@@ -27,31 +27,6 @@
 
 </details>
 
-<details>
-<summary>User Navigation Tests</summary>
-<br>
-
-| Test |Pass/Fail  |
-|--|--|
-|User can navigate to a product| Pass |
-|User can access the product details| Pass|
-|User can add a product to bag| Pass|
-|User can navigate back to products| Pass|
-|User can add more products to bag| Pass|
-|User can add multiple quantities of a product | Pass|
-|User can navigate to shopping bag| Pass|
-|A logged in User can navigate to the profile section of accounts| Pass|
-|User can access their saved address information| Pass|
-|User can access previous orders| Pass|
-|User can view the blog overview page| Pass|
-|User can access specific blog posts| Pass|
-|User can access the contact & faq page| Pass|
-|User can access the contact form| Pass|
-|The links in footer open to the relevent pages| Pass|
-|All Navigation Heading links open to correct option| Pass|
-|All dropdown links open to correct option| Pass|
-
-</details>
 
 <details>
 <summary>Home Page Tests</summary>
@@ -70,6 +45,7 @@
 |Newsletter| Enter valid email and a thank you for subscribing text appears |Pass|
 |Footer|The site links in footer open to the relevent pages|Pass|
 ||The socail links in footer open to the external pages|Pass|
+|Admin|The admin can access the admin only dropdown menu after logging-in |Pass|
 
 </details>
 
@@ -140,5 +116,22 @@
 ||Admins can edit blog posts on page |Pass|
 ||Admins can delete blog post on page |Pass|
 
+
+</details>
+
+<details>
+<summary>Profile Tests</summary>
+<br>
+
+|Section|Test|Pass/Fail|
+| ---| ---|---|
+|Profile|Only logged-in users can view profile section |Pass|
+||logged-in users can view profile details |Pass|
+||Only logged-in users can update personal details |Pass|
+||logged-in users can update order delivery details |Pass|
+||logged-in users can update personal details |Pass|
+||logged-in users can change password |Pass|
+||logged-in users can delete profile |Pass|
+||logged-in users can view previous orders |Pass|
 
 </details>
