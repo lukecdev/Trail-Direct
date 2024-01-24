@@ -1,0 +1,4 @@
+User-agent: *
+Dissalow: /accounts/
+Disallow: /checkout/
+Sitemap: https://trail-direct-77691eb3f453.herokuapp.com/sitemap.xml
