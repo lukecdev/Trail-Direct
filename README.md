@@ -38,7 +38,7 @@ In order to improve the business's visibility to search engines, I used an appro
 I set up a newsletter that users could sign up to recieve more details on products.
 A Facebook page was set up also to promote the business online and allow customers to contact the company through Facebook. [Facebook-Page](https://www.facebook.com/profile.php?id=61555703349226)
 
-<details>
+<details>Facebook Page	
 <img src="media/trail-direc-facebook.jpg">
 </details>
 
@@ -386,6 +386,8 @@ The main features of the website are documented in this section.
 - Restrictions
 	- Users are redirected from pages they do not have authorization to view. They are brought back to the home page or sent to sign in page.
 
+<a name="left"></a>
+
 ### Future Features
 	- A review section under each product. This would show reviews from users who have bought the product before to leave a review. This was not put in due to time constraints.
 	- Adding FAQ sections to the contact form from the front end.
@@ -565,6 +567,14 @@ The main features of the website are documented in this section.
   ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
   
 </details>
+
+<a name="bugs"></a>
+
+Known
+	- When a product gets added to the basket, a toast is displayed but it does not disapear after the set time. It does also not close when the cornor 'x' is clicked. The user has to click on something else to remove the toast. I belive this is an issue with how my JS function is interacting with the toast html.
+	- In the shopping bag, the sub-total is still in $ instead of €. When an item is added to the baf, the icon changes but still has the $ instead of euro symbol. 
+	- The mobile site is not fully respionsive as some product images do not scale down correctly, this is an issue with the scaling and break points in the css.
+	- The search bar doesn't bring all the items forward. This is because the q value is not added correctly to new products added.
 
 <a name="deployment"></a>
 
@@ -854,7 +864,8 @@ The steps below describe how to fork or clone the repository if desired.
 ## Credits
 
 ### Resources
-- The Code Institute "Building an E-Commerce Platform" Boutique Ado project was very much relied upon to build this project.
+	- The Code Institute "Building an E-Commerce Platform" Boutique Ado project was very much relied upon to build this project.
+	- Kim Bergstroem's Easy Keyboard project from [GitHub](https://github.com/KimBergstroem/PP5/tree/main) was used as inpiration in the website design, especially for the contact page and layout of the site.
 
 ### Acknowledgements
 	- My Mentor Chris Quinn, for the contunied helpful feedback through out my project.
