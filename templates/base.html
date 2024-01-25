@@ -66,50 +66,48 @@
             </div>
 
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                    
-                    <li class="list-inline-item"> <!-- Admin only navbar menu -->
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a class="text-black nav-link" href="{% url 'add_product' %}" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fa-solid fa-user-gear"></i></div>
-                                    <p class="my-0">Product Admin</p>
-                            </div>
-                        </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options"> 
+                        <li class="list-inline-item"> <!-- Admin only navbar menu -->
+                            <a class="text-black nav-link" href="{% url 'add_product' %}" id="admin-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fa-solid fa-user-gear"></i></div>
+                                        <p class="my-0">Product Admin</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="admin-options"> 
                                     <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                     <a href="{% url 'admin:index' %}" class="dropdown-item">Admin</a>
                                     <a href="{% url 'newsletter' %}" class="dropdown-item">Send Newsletter</a>
-                        </div>
-                            {% endif %}
+                            </div>
+                        </li>
                         {% endif %}
-                    </li>
+                        {% endif %}
+                    
 
-                    <li class="list-inline-item nav-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="text-center">
-                                <div><i class="fa-solid fa-circle-user"></i></div>
-                                {% if request.user.is_authenticated %}
+                        <li class="list-inline-item nav-item dropdown">
+                            <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="text-center">
+                                    <div><i class="fa-solid fa-circle-user"></i></div>
+                                    {% if request.user.is_authenticated %}
                                     <p class="my-0">My Account</p>
-                                {% else %}
+                                    {% else %}
                                     <p class="my-0">Account</p>
                                 {% endif %}
-                            </div>
-                        </a>
-
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                        {% if request.user.is_authenticated %}
+                                </div>
+                            </a>
+                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            {% if request.user.is_authenticated %}
                             <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                        {% else %}
+                            {% else %}
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                        {% endif %}
-                        </div>
-                    </li>
-                    <li class="list-inline-item">
+                            {% endif %}
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -181,9 +179,9 @@
     
     
     <!--Footer section -->
-    <section class="footer-dark mt-5">
-        <footer class="py-3 my-4 footer">
-            <div class="container p-4">
+<section class="footer-dark mt-5">
+    <footer class="py-3 my-4 footer">
+        <div class="container p-4">
                 
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
@@ -194,14 +192,15 @@
             <li class="nav-item"><a href="{% url 'privacy_policy' %}" class="nav-link px-2 text-white">Privacy</a></li>
           </ul>
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <h4 class="text-white justify-content-left">Follow us on our socials:</h4>
+            <li class="nav-item px-2"><h4 class="text-white justify-content-left">Follow us on our socials:</h4></li>
             <li class="nav-item px-2"><a href="https://twitter.com/"  target="_blank"><span class="visually-hidden">Visit Twitter account</span><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #63E6BE;"></i></a></li>
             <li class="nav-item px-2"><a href="https://www.facebook.com/"  target="_blank"><span class="visually-hidden">Visit Facebook account</span><i class="fa-brands fa-facebook fa-xl" style="color: #74C0FC;"></i></a></li>
-            <li class="nav-item px-2"></li><a href="https://www.instagram.com/" target="_blank"><span class="visually-hidden">Visit Instagram account</span><i class="fa-brands fa-square-instagram fa-xl" style="color: #FFD43B;"></i></a></li>
+            <li class="nav-item px-2"><a href="https://www.instagram.com/" target="_blank"><span class="visually-hidden">Visit Instagram account</span><i class="fa-brands fa-square-instagram fa-xl" style="color: #FFD43B;"></i></a></li>
 
           </ul>
           <p class="text-center text-strong">For Educational Purposes Only, No Real Purchase Can Be Made</p>
-        </footer>
-    </section>
-  </body>
+        </div>
+    </footer>
+</section>
+</body>
 </html>
