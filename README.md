@@ -6,24 +6,23 @@
 
 ### By Luke Courtney
 
-## **[Live Site](https://trail-direct-77691eb3f453.herokuapp.com/)  |  [Repository](https://github.com/lukecdev/Trail-Direct)
+## [Live Site](https://trail-direct-77691eb3f453.herokuapp.com/)  |  [Repository](https://github.com/lukecdev/Trail-Direct)
 
 
 ## Table of contents
 <a name="contents">Back to Top</a>
  1. [ Business Model ](#business)
  2. [ UX ](#ux)
- 3. [ Seo ](#seo)
- 4. [Agile Development](#agile)
- 5. [ Features ](#features)  
- 6. [ Features Left to Implement ](#left)  
- 7. [ Technology used ](#tech) 
- 8. [ Testing ](#testing)  
- 9. [ Bugs ](#bugs)  
- 10. [ Deployment](#deployment)
- 11. [ Credits](#credits)
- 12. [ Content](#content)  
- 13. [ Acknowledgements](#acknowledgements) 
+ 3. [Agile Development](#agile)
+ 4. [ Features ](#features)  
+ 5. [ Features Left to Implement ](#left)  
+ 6. [ Technology used ](#tech) 
+ 7. [ Testing ](#testing)  
+ 8. [ Bugs ](#bugs)  
+ 9. [ Deployment](#deployment)
+ 10. [ Credits](#credits)
+ 11. [ Content](#content)  
+ 12. [ Acknowledgements](#acknowledgements) 
 
 <a name="business"></a>
 
@@ -113,12 +112,35 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 <summary>Entity Relationship Diagram</summary>
 <img src="media/readme/TD-ERG.jpg">
 
-### Agile Method 
+<a name="agile"></a>
+
+## Agile Development
+
+### Agile Overview
+Once I had settled on a website idea I was going to build, I started preplanning by creating a github prjects page to track the epics, user stories and tasks that were required for the project.
+
+This allowed me to better manage my workload effectively.
+
+As I worked through the project, I moved the tasks on the board from not started through to being completed. 
+
+One of the sections in my project boards is called NINTH. This stands for "Not importants, nice to have". This is usually for expanding the project beyond MVP and adding additional features to enhance user experience.
+
+### GitHub Project Board
 I used the github projects as a agile tool to manage the planning and implamentation of functions to the site. 
 [Project Board](https://github.com/users/lukecdev/projects/2)
 
-#### User Stories
+#### Epics
 
+
+Each Epic may have more than one user stories associated with each tasks.
+
+The full breakdown of these user stories can be found in the project board. 
+
+Due to time contsraints some items where moved to NINTH after I were deemed not mandatory for the final project.
+
+[Back to Top of page](#contents)
+
+<a name="Features"></a>
 
 ## Features
 
@@ -171,61 +193,6 @@ The main features of the website are documented in this section.
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
-## Testing 
-
-### Testing Phase
-
-### Manual Testing
-
-<details>
-<summary>Account Registration Tests </summary>
-<br>
-
-<a name="tech"></a>
-##  Technology Used
-### Html
- - Used to structure the website
-
-### CSS
- - Custom CSS was written to make the site as close to the wireframes.
-
-### JavaScript
- -  Used to add timeout function for messages as well as to enable the menu on index.html
-
-### Python
- -  Used for the logic in this project.
-
-### Django
- -  Framework used to build this project.
-
-### Font Awesome
- -  Icon library used in the navigstion bar and footer.
-
-### Bootstrap 5
- - Used as the base front end framework to work alongside Django
-
-### GitHub
- - Used to store the code for this project & for the projects Kanban board used to complete it.
-
-### Heroku
- - Used to host and deploy this project
-
-### ElephantSQL
- - Storage for the database
-
-### Git
-- Used for version control throughout the project and to ensure a good clean record of work done was maintained.
-
-### AWS S3 and IAM
-- Used to host static and media files for this project and IAM for the permissions based roles for accessing the S3 buckets.
-
-### Stripe
-- Stripe is used to handle website payments.
-
-### Django-Crispy-Forms
-- Used to style the forms in this project.
-
-[Back to Top of page](#contents)
 
 <a name="features"></a>
 
@@ -395,6 +362,51 @@ The main features of the website are documented in this section.
 
 [Back to top](#contents)
 
+<a name="tech"></a>
+##  Technology Used
+### Html
+ - Used to structure the website
+
+### CSS
+ - Custom CSS was written to make the site as close to the wireframes.
+
+### JavaScript
+ -  Used to add timeout function for messages as well as to enable the menu on index.html
+
+### Python
+ -  Used for the logic in this project.
+
+### Django
+ -  Framework used to build this project.
+
+### Font Awesome
+ -  Icon library used in the navigstion bar and footer.
+
+### Bootstrap 5
+ - Used as the base front end framework to work alongside Django
+
+### GitHub
+ - Used to store the code for this project & for the projects Kanban board used to complete it.
+
+### Heroku
+ - Used to host and deploy this project
+
+### ElephantSQL
+ - Storage for the database
+
+### Git
+- Used for version control throughout the project and to ensure a good clean record of work done was maintained.
+
+### AWS S3 and IAM
+- Used to host static and media files for this project and IAM for the permissions based roles for accessing the S3 buckets.
+
+### Stripe
+- Stripe is used to handle website payments.
+
+### Django-Crispy-Forms
+- Used to style the forms in this project.
+
+[Back to Top of page](#contents)
 
 
 <a name="testing"></a>
@@ -417,9 +429,9 @@ The main features of the website are documented in this section.
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
-## Testing 
+<a name="Testing"></a>
 
-### Testing Phase
+## Testing 
 
 ### Manual Testing
 
