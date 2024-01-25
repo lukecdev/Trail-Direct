@@ -29,6 +29,8 @@
 <summary> Index page </summary>
 <br>
     ![Wireframe Index](media/readme/Trail-direct-Home.jpg)
+    ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
+
 </details>
 
 <details>
