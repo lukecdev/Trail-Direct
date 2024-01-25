@@ -820,7 +820,13 @@ The steps below describe how to fork or clone the repository if desired.
 ### Media
 | Source | Location | Type |
 | --- | --- | --- |
-| | Landing Page | image | hero image on homepage |
+|[Tyres Blog Photo](https://d1nymbkeomeoqg.cloudfront.net/photos/26/6/382146_3623_XL.jpg) | Blog Article | image |
+|[Product Image TRP ](https://www.bike-discount.de/media/image/fb/g0/7a/TRP-SLATE-EVO-Scheibenbremsen-Set-20126827_a_800x800.jpg) | Product detail | image |
+|[Product Image pedals ](https://www.bike-discount.de/media/image/32/c7/1b/DMR-Vault-Plattformpedale-DMR-VAULT-O2_800x800.jpg) | Product detail pedals | image |
+|[Pedal Product Photo](https://www.bike-discount.de/media/image/4a/db/8d/DMR-V12-blau-DMR-VV12-B9_800x800.jpg) | Products | image |
+|[Tool Product Photo](https://www.bike-discount.de/media/image/75/38/39/15410087_1_800x800.jpg) | Products | image |
+|[Tyre Product Photo](https://www.bike-discount.de/media/image/0e/4b/af/Michelin-475741-Wild-Enduro-Front-MAGI-X-DH-Racing-Line-29-Faltreifen-1_800x800.jpg) | Products | image |
+
 
 ### Resources
 	- The Code Institute "Building an E-Commerce Platform" Boutique Ado project was very much relied upon to build this project.
