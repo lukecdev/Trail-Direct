@@ -25,6 +25,9 @@
 
 ### Wireframes
 
+- WireFrames 
+    <img src="media/readme/Wireframe-TD.png">
+
 <details>
 <summary> Index page </summary>
 <br>
@@ -35,6 +38,24 @@
 <summary> Mobile page </summary>
 <br>
     <img src="media/readme/td-mobile-home.jpg">
+</details>
+
+<details>
+<summary> Login Wireframe </summary>
+<br>
+    <img src="media/readme/trail-direct-login.jpg">
+</details>
+
+<details>
+<summary> Register Wireframe </summary>
+<br>
+    <img src="media/readme/trail-direct-register.jpg">
+</details>
+
+<details>
+<summary> Product Page Wireframe </summary>
+<br>
+    <img src="media/readme/trail-direct-product.jpg">
 </details>
 
 <a name="tech"></a>
