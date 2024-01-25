@@ -74,32 +74,32 @@ Some slight layout differences exist between the finished website and the wirefr
     <img src="media/readme/Wireframe-TD.png">
 
 <details>
-<summary> Index page </summary>
-<br>
+	<summary> Index page </summary>
+	<br>
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
 <details>
-<summary> Mobile page </summary>
-<br>
+	<summary> Mobile page </summary>
+	<br>
     <img src="media/readme/td-mobile-home.jpg">
 </details>
 
 <details>
-<summary> Login Wireframe </summary>
-<br>
+	<summary> Login Wireframe </summary>
+	<br>
     <img src="media/readme/trail-direct-login.jpg">
 </details>
 
 <details>
-<summary> Register Wireframe </summary>
-<br>
+	<summary> Register Wireframe </summary>
+	<br>
     <img src="media/readme/trail-direct-register.jpg">
 </details>
 
 <details>
-<summary> Product Page Wireframe </summary>
-<br>
+	<summary> Product Page Wireframe </summary>
+	<br>
     <img src="media/readme/trail-direct-product.jpg">
 </details>
 
@@ -124,47 +124,47 @@ The main features of the website are documented in this section.
 - Navigation
     - The navigation bar is available throughout the website. It is attached to the base. It contains all the relevant links for users to use the site. Extra admin links are displayed for an admin logged in so that changes to the site can be made. The center logo is a link to the home page. The bag item in the right corner displays the current bag total and links to the checkout.
 <details>
-<summary> Navigation </summary>
+	<summary> Navigation </summary>
     <img src="media/readme/features/desk-nav-feature.jpg">
 </details>
 <details>
-<summary> Navigation Admin </summary>
+	<summary> Navigation Admin </summary>
     <img src="media/readme/features/navbar-admin-sc-features.jpg">
 </details>
     - On mobile the navigation bar collapses.
 <details>
-<summary> Navigation Mobile </summary>
+	<summary> Navigation Mobile </summary>
     <img src="media/readme/features/mobile-nav-sc.jpg">
 </details>
     - In the footer on every page, there are links to other internal pages plus external links to socials.
 <details>
-<summary> Navigation Footer </summary>
+	<summary> Navigation Footer </summary>
     <img src="media/readme/features/footer-sc-features.jpg">
 </details>
 - Authentication
     - The authentication for the site is handled by Django Allauth and links to the main login, logout & register pages are found in the account section of the navbar. Messages are displayed to the user if there is an error with their imputs.
 <details>
-<summary> Register Page </summary>
+	<summary> Register Page </summary>
     <img src="media/readme/features/register-sc.jpg">
 </details>
 
 <a name="testing"></a>
 
 <details>
-<summary> Mobile Navigation </summary>
-<br>
+	<summary> Mobile Navigation </summary>
+	<br>
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
 <details>
-<summary> Catagory Cards </summary>
-<br>
+	<summary> Catagory Cards </summary>
+	<br>
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
 <details>
-<summary> Products Page </summary>
-<br>
+	<summary> Products Page </summary>
+	<br>
     <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
@@ -233,21 +233,21 @@ The main features of the website are documented in this section.
 - Navigation
     - The navigation bar is available throughout the website. It is attached to the base. It contains all the relevant links for users to use the site. Extra admin links are displayed for an admin logged in so that changes to the site can be made. The center logo is a link to the home page. The bag item in the right corner displays the current bag total and links to the checkout.
 <details>
-<summary> Navigation </summary>
+	<summary> Navigation </summary>
     <img src="media/readme/features/desk-nav-feature.jpg">
 </details>
 <details>
-<summary> Navigation Admin </summary>
+	<summary> Navigation Admin </summary>
     <img src="media/readme/features/navbar-admin-sc-features.jpg">
 </details>
     - On mobile the navigation bar collapses.
 <details>
-<summary> Navigation Mobile </summary>
+	<summary> Navigation Mobile </summary>
     <img src="media/readme/features/mobile-nav-sc.jpg">
 </details>
     - In the footer on every page, there are links to other internal pages plus external links to socials.
 <details>
-<summary> Navigation Footer </summary>
+	<summary> Navigation Footer </summary>
     <img src="media/readme/features/footer-sc-features.jpg">
 </details>
 - Authentication
