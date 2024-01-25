@@ -131,6 +131,18 @@ I used the github projects as a agile tool to manage the planning and implamenta
 
 #### Epics
 
+	1. [Epic: User Registration & Accounts](https://github.com/lukecdev/Trail-Direct/issues/1)
+	2. [Epic: Shopping Bag](https://github.com/lukecdev/Trail-Direct/issues/2)
+	3. [Epic: Product Admin](https://github.com/lukecdev/Trail-Direct/issues/3)
+	4. [Epic: Blog](https://github.com/lukecdev/Trail-Direct/issues/4)
+	5. [Epic: Newsletter](https://github.com/lukecdev/Trail-Direct/issues/5)
+	6. [Epic: Profiles](https://github.com/lukecdev/Trail-Direct/issues/6)
+	7. [Epic: Site Navigation](https://github.com/lukecdev/Trail-Direct/issues/7)
+	8. [Epic: Contact & FAQ](https://github.com/lukecdev/Trail-Direct/issues/8)
+	9. [Epic: SEO & Marketing](https://github.com/lukecdev/Trail-Direct/issues/9)
+	10. [Epic: ReadMe.md](https://github.com/lukecdev/Trail-Direct/issues/10)
+	11. [Epic: Deploy Project](https://github.com/lukecdev/Trail-Direct/issues/11)
+
 
 Each Epic may have more than one user stories associated with each tasks.
 
