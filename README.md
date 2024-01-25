@@ -28,13 +28,13 @@
 <details>
 <summary> Index page </summary>
 <br>
-![Wireframe Index](media/readme/Trail-direct-Home.jpg)
+    ![Wireframe Index](media/readme/Trail-direct-Home.jpg)
 </details>
 
 <details>
 <summary> Mobile page </summary>
 <br>
-![Wireframe Mobile](media/readme/td-mobile-home.jpg)
+    ![Wireframe Mobile](media/readme/td-mobile-home.jpg)
 </details>
 
 <a name="tech"></a>
