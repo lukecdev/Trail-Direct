@@ -1,14 +1,19 @@
 # Trail Direct
 
+<img src="media/logo-readme.jpg">
+
 ## A e-commerce site designed to provide mountain bike cyclists with the best upgrades and accorriess to maximize their mountain bike experiences.
 
-## Trail Direct
+### By Luke Courtney
+
+## **[Live Site](https://trail-direct-77691eb3f453.herokuapp.com/)  |  [Repository](https://github.com/lukecdev/Trail-Direct)
+
 
 ## Table of contents
 <a name="contents">Back to Top</a>
  1. [ Business Model ](#business)
  2. [ UX ](#ux)
- 3. [ SEO ](#seo)
+ 3. [ Seo ](#seo)
  4. [Agile Development](#agile)
  5. [ Features ](#features)  
  6. [ Features Left to Implement ](#left)  
@@ -20,8 +25,44 @@
  12. [ Content](#content)  
  13. [ Acknowledgements](#acknowledgements) 
 
+<a name="business"></a>
+
+## Business Overview
+
+The business is a B2C e-commerce platform to provide phyical products to customers through an online store.
+
+The types of products for sale high-end products for cyclists, specializing in bike parts for mountain bikes. 
+
+### Search Engine Optimization and Social Media Marketing
+In order to improve the business's visibility to search engines, I used an approach of meta tags, keywords, a sitemap.xml file, and a robots.txt file.
+I set up a newsletter that users could sign up to recieve more details on products.
+A Facebook page was set up also to promote the business online and allow customers to contact the company through Facebook. [Facebook-Page](https://www.facebook.com/profile.php?id=61555703349226)
+<img src="media/trail-direc-facebook.jpg">
+
+### Keywords
+Appropriate and relevent keywords where used for the site in making it better suited for SEO. This will improve the websites visibility and help new users search the site. 
+I have included a screenshot of the head element from my base.html page that shows the keywords within the relevant meta tag.
+
+<details>
+    <summary>Keywords</summary>
+    <img src="media/meta-tags-td.jpg">
+</details>
+
+### Sitemaps
+I generated a sitemap.xml file for the site using XML-Sitemaps and included it in the root level of the project repository. This will help search engines crawl the site more effectively.
+
+### Robots
+I created a robots.txt at the root level of the project file. This tells search engine crawlers which URLs the crawler can access on the site. This is used mainly to avoid overloading the site with requests.
+
+### Newsletter Marketing
+An embedded custom model newsletter form is included in the bottom of the home page. Users can subscribe to the newsletter to hear any updates or offers upcoming. This will help the business market to interested returning customers.
+
 
 <a name="ux"></a>
+
+### Color Pallette
+- Color Pallette for the website.
+<img src="media/readme/color-website-sc.jpg">
 
 ### Wireframes
 
@@ -68,6 +109,13 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 <details>
 <summary>Entity Relationship Diagram</summary>
 <img src="media/readme/TD-ERG.jpg">
+
+### Agile Method 
+I used the github projects as a agile tool to manage the planning and implamentation of functions to the site. 
+[Project Board](https://github.com/users/lukecdev/projects/2)
+
+#### User Stories
+
 
 ## Features
 
@@ -335,8 +383,12 @@ The main features of the website are documented in this section.
 - Restrictions
 	- Users are redirected from pages they do not have authorization to view. They are brought back to the home page or sent to sign in page.
 
-	
+### Future Features
+	- A review section under each product. This would show reviews from users who have bought the product before to leave a review. This was not put in due to time constraints.
+	- Adding FAQ sections to the contact form from the front end.
+	- Product questions. This is a submitted questions on products details that are answered by site experts. 
 
+[Back to top](#contents)
 
 
 
@@ -796,5 +848,5 @@ The steps below describe how to fork or clone the repository if desired.
 
 [Back to top](#contents)
 
-## testing 
-# test
+## Credits 
+
