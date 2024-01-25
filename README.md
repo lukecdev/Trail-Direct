@@ -108,9 +108,12 @@ Some slight layout differences exist between the finished website and the wirefr
 #### Database Schema
 
 Pre-project planning involved generating an entity relationship diagram. This was done in order to create a clear plan as to how all of the database models interact with each other. This was also done to determine what data fields were needed for each model. The review & question model was not implented due to time contraint. The relationship between each model and another is noted in the diagram with "FK" denoting Foreign Key. 
+
 <details>
-<summary>Entity Relationship Diagram</summary>
+	<summary>Entity Relationship Diagram</summary>
 <img src="media/readme/TD-ERG.jpg">
+</details>
+
 
 <a name="agile"></a>
 
@@ -886,6 +889,11 @@ The steps below describe how to fork or clone the repository if desired.
 [Back to top](#contents)
 
 ## Credits
+
+### Media
+| Source | Location | Type |
+| --- | --- | --- |
+| | Landing Page | image | hero image on homepage |
 
 ### Resources
 	- The Code Institute "Building an E-Commerce Platform" Boutique Ado project was very much relied upon to build this project.
