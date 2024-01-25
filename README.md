@@ -25,6 +25,10 @@
 
 ### Wireframes
 
+Wireframes were created for the website layout including mobile wireframes for pages that have a slightly different layout to the desktop version.
+
+Some slight layout differences exist between the finished website and the wireframes.
+
 - WireFrames 
     <img src="media/readme/Wireframe-TD.png">
 
@@ -57,6 +61,13 @@
 <br>
     <img src="media/readme/trail-direct-product.jpg">
 </details>
+
+#### Database Schema
+
+Pre-project planning involved generating an entity relationship diagram. This was done in order to create a clear plan as to how all of the database models interact with each other. This was also done to determine what data fields were needed for each model. The review & question model was not implented due to time contraint. The relationship between each model and another is noted in the diagram with "FK" denoting Foreign Key. 
+<details>
+<summary>Entity Relationship Diagram</summary>
+<img src="media/readme/TD-ERG.jpg">
 
 <a name="tech"></a>
 ##  Technology Used
@@ -104,7 +115,58 @@
 
 [Back to Top of page](#contents)
 
+<a name="features"></a>
+
+## Features
+
+The main features of the website are documented in this section.
+
+- Navigation
+    - The navigation bar is available throughout the website. It is attached to the base. It contains all the relevant links for users to use the site. Extra admin links are displayed for an admin logged in so that changes to the site can be made. The center logo is a link to the home page. The bag item in the right corner displays the current bag total and links to the checkout.
+<details>
+<summary> Navigation </summary>
+    <img src="media/readme/features/desk-nav-feature.jpg">
+</details>
+<details>
+<summary> Navigation Admin </summary>
+    <img src="media/readme/features/navbar-admin-sc-features.jpg">
+</details>
+    - On mobile the navigation bar collapses.
+<details>
+<summary> Navigation Mobile </summary>
+    <img src="media/readme/features/mobile-nav-sc.jpg">
+</details>
+    - In the footer on every page, there are links to other internal pages plus external links to socials.
+<details>
+<summary> Navigation Footer </summary>
+    <img src="media/readme/features/footer-sc-features.jpg">
+</details>
+- Authentication
+    - The authentication for the site is handled by Django Allauth and links to the main login, logout & register pages are found in the account section of the navbar. Messages are displayed to the user if there is an error with their imputs.
+<details>
+<summary> Register Page </summary>
+    <img src="media/readme/features/register-sc.jpg">
+</details>
+
 <a name="testing"></a>
+
+<details>
+<summary> Mobile Navigation </summary>
+<br>
+    <img src="media/readme/Trail-direct-Home.jpg">
+</details>
+
+<details>
+<summary> Catagory Cards </summary>
+<br>
+    <img src="media/readme/Trail-direct-Home.jpg">
+</details>
+
+<details>
+<summary> Products Page </summary>
+<br>
+    <img src="media/readme/Trail-direct-Home.jpg">
+</details>
 
 ## Testing 
 
