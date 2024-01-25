@@ -208,6 +208,137 @@ The main features of the website are documented in this section.
 <summary> Register Page </summary>
     <img src="media/readme/features/register-sc.jpg">
 </details>
+- Confirmation Email
+	- New user gets sent a email to confirm their details and finish registration.
+<details>
+<summary> Email Confirmation </summary>
+    <img src="media/readme/features/signup-email-sc.jpg">
+</details>
+- Products
+	The products are displayed under various heading, based on slected catagories or sorted by price.
+<details>
+<summary> Products Page </summary>
+    <img src="media/readme/features/products-sc-feature.jpg">
+</details>
+<details>
+<summary> Products Page </summary>
+    <img src="media/readme/features/products-sc-feature.jpg">
+</details>
+<details>
+<summary> Products Details </summary>
+    <img src="media/readme/features/product-deta-sc-features.jpg">
+</details>
+<details>
+<summary> Products Details </summary>
+    <img src="media/readme/features/product-description-sc-features.jpg">
+</details>
+	- Catagories of products could be slected on the home page through the cars below the hero image.
+<details>
+<summary> Product Catagory Home Page </summary>
+    <img src="media/readme/features/catagory-sc-features.jpg">
+</details>
+- Product Admin
+	- When the admin is signed-in, they get access to addional buttons to edit the products and add products in the navbar.
+<details>
+<summary> Admin Products </summary>
+    <img src="media/readme/features/edit-delete-product-sc.jpg">
+</details>
+<details>
+<summary> Admin Edit Products </summary>
+    <img src="media/readme/features/edit-product-1-sc.jpg">
+	<img src="media/readme/features/edit-product-2-sc.jpg">
+	<img src="media/readme/features/product-edit-success-sc.jpg">
+</details>
+<details>
+<summary> Admin Add Products </summary>
+    <img src="media/readme/features/add-product-sc.jpg">
+</details>
+-Shopping Bag
+	The bag contains the list of products that the user has added to possibly purchase. The quantities of the products can be adjusted in the bag as well as product deletion. The overall price and extra charges are calculated in the bag before checkout.
+<details>
+<summary> Bag Details </summary>
+    <img src="media/readme/features/blog-details.jpg">
+</details>
+<details>
+<summary> Bag Remove Item </summary>
+    <img src="media/readme/features/bag-remove-sc.jpg">
+</details>
+- Checkout
+	- The checkout page contains more details on the users order, the final charges and the delivery address of the products is be entered.
+<details>
+<summary> Checkout Details </summary>
+    <img src="media/readme/features/checkout-details-sc.jpg">
+</details>
+<details>
+<summary> Delivery Details </summary>
+    <img src="media/readme/features/delivery-form-sc.jpg">
+</details>
+<details>
+<summary> Stripe Details </summary>
+    <img src="media/readme/features/stripe-sc.jpg">
+</details>
+	- Once payment goes through, the user will be shown a confirmation page which confirms all the details of the transiation.
+<details>
+<summary> Order Confirmation </summary>
+    <img src="media/readme/features/order-confirmation-screen.jpg">
+</details>
+- Blog
+	- The blog page shows articles posed by the admin.
+<details>
+<summary> Blog Page </summary>
+    <img src="media/readme/features/blog-user-sc.jpg">
+</details>
+<details>
+<summary> Blog Detail </summary>
+    <img src="media/readme/features/blog-details.jpg">
+</details>
+	- Blog admin can edit, delete or add blog posts when signed in as admins.
+<details>
+<summary> Admin Blog </summary>
+    <img src="media/readme/features/blog-sc.jpg">
+</details>
+- Contact
+	- A contact page is accessable for all users, where a FAQ is also to provide users answers to any issues they had. There is a support email that is accessable to logged-in users to help with order issues.
+<details>
+<summary> Contact </summary>
+    <img src="media/readme/features/contact-sc.jpg">
+</details>
+<details>
+<summary> Contact Form </summary>
+    <img src="media/readme/features/contact-form-sc.jpg">
+</details>
+<details>
+<summary> FAQ </summary>
+    <img src="media/readme/features/faq-sc.jpg">
+</details>
+- Newsletter
+	- The newsletter is for users to sign up with their email to recieve updates from the site.
+<details>
+<summary> Newsletter </summary>
+    <img src="media/readme/features/newsletter-sc-features.jpg">
+</details>
+	- Admin page for sending newsletter to subcribed users.
+<details>
+<summary> Newsletter Admin </summary>
+    <img src="media/readme/features/send-newsletter.jpg">
+</details>
+- Privacy Policy
+<details>
+<summary> Privacy Policy </summary>
+    <img src="media/readme/features/privacy-policy-sc.jpg">
+</details>
+- 404 Error Page
+<details>
+<summary> 404 Error </summary>
+    <img src="media/readme/features/404-sc.jpg">
+</details>
+- Restrictions
+	- Users are redirected from pages they do not have authorization to view. They are brought back to the home page or sent to sign in page.
+
+	
+
+
+
 
 <a name="testing"></a>
 
