@@ -28,15 +28,13 @@
 <details>
 <summary> Index page </summary>
 <br>
-    ![Wireframe Index](media/readme/Trail-direct-Home.jpg)
-    ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
-
+    <img src="media/readme/Trail-direct-Home.jpg">
 </details>
 
 <details>
 <summary> Mobile page </summary>
 <br>
-    ![Wireframe Mobile](media/readme/td-mobile-home.jpg)
+    <img src="media/readme/td-mobile-home.jpg">
 </details>
 
 <a name="tech"></a>
