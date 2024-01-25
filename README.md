@@ -37,7 +37,10 @@ The types of products for sale high-end products for cyclists, specializing in b
 In order to improve the business's visibility to search engines, I used an approach of meta tags, keywords, a sitemap.xml file, and a robots.txt file.
 I set up a newsletter that users could sign up to recieve more details on products.
 A Facebook page was set up also to promote the business online and allow customers to contact the company through Facebook. [Facebook-Page](https://www.facebook.com/profile.php?id=61555703349226)
+
+<details>
 <img src="media/trail-direc-facebook.jpg">
+</details>
 
 ### Keywords
 Appropriate and relevent keywords where used for the site in making it better suited for SEO. This will improve the websites visibility and help new users search the site. 
@@ -848,5 +851,14 @@ The steps below describe how to fork or clone the repository if desired.
 
 [Back to top](#contents)
 
-## Credits 
+## Credits
 
+### Resources
+- The Code Institute "Building an E-Commerce Platform" Boutique Ado project was very much relied upon to build this project.
+
+### Acknowledgements
+	- My Mentor Chris Quinn, for the contunied helpful feedback through out my project.
+	- Jason and Oisin from Tutor support at Code Institute for their amazing support.
+	- Alan Bushell at Code Institute for the contunied support through out the course.
+
+[Back to top](#contents)
