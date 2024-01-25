@@ -21,6 +21,22 @@
  13. [ Acknowledgements](#acknowledgements) 
 
 
+<a name="ux"></a>
+
+### Wireframes
+
+<details>
+<summary> Index page </summary>
+<br>
+![Wireframe Index](media/readme/Trail-direct-Home.jpg)
+</details>
+
+<details>
+<summary> Mobile page </summary>
+<br>
+![Wireframe Mobile](media/readme/td-mobile-home.jpg)
+</details>
+
 <a name="tech"></a>
 ##  Technology Used
 ### Html
@@ -89,8 +105,6 @@
 |User receives email verification email| Pass |
 
 </details>
-
---
 
 <details>
 <summary>Home Page Tests</summary>
