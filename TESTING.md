@@ -30,12 +30,39 @@ W3C Jigsaw is a tool provided by the World Wide Web Consortium (W3C) that allows
 | Checkout | ![checkout](media/readme/testing/checkout-css-test.jpg) | Pass |
 | Profile | ![profile](media/readme/testing/profile-css-test.jpg) | Pass |
 
+### Python
+
+All Custom Python code was manually tested multiple times during and after development. Used autopep8 to format the code while going through the project to make sure that it was being made under the correct guidelines.
+
 
 ### JAVASCRIPT Validation
 
 JSHint is a JavaScript code validator that aids in improving the quality of your JavaScript code. 
 
 |File|Validator|Result|
+| --- | --- | --- |
 | Country.js | ![country](media/readme/testing/country-js-test.jpg) | Pass |
 | Stripe.js | ![strip](media/readme/testing/strip-js-test.jpg) | Pass |
 | toast.js | ![toast](media/readme/testing/toast-js-test.jpg) | Pass |
+
+## Google Lighthouse Testing
+
+> index.html
+
+<details>
+<summary>Index.html Screenshot</summary>
+  <br>
+
+  ![Google Lighthouse Index](media/readme/Trail-Direct-lighthouse-desk.jpg)
+
+</details>
+
+> products.html
+
+<details>
+<summary>Profiles.html Screenshot</summary>
+  <br>
+
+  ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
+  
+</details>
