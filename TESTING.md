@@ -13,10 +13,8 @@ Google Chrome web browser and the 'Inspect' function were used to capture the HT
 
 |Page|Validator|Result|
 | --- | --- | --- |
-| Home | [home](media/readme/testing/index-html-sc.jpg) | Pass |
-| All Products | --- | Pass |
-| Product Detail | --- | Pass |
-| Contact | --- | Pass |
-| Blog | --- | Pass |
-| Register | --- | Pass |
-| Add Product | --- | Pass |
+| Home | ![home](media/readme/testing/index-html-sc.jpg) | Pass |
+| All Products | ![all products](media/readme/testing/all-products-html-test.jpg) | Pass |
+| Contact | ![contact](media/readme/testing/contact-html-test.jpg) | Pass |
+| Blog | ![blog](media/readme/testing/blog-html-test.jpg) | Pass |
+| Register | ![register](media/readme/testing/register-htl-test.jpg) | Pass |
