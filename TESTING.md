@@ -49,20 +49,19 @@ JSHint is a JavaScript code validator that aids in improving the quality of your
 
 > index.html
 
-<details>
-<summary>Index.html Screenshot</summary>
+
+Index.html Screenshot
   <br>
 
   ![Google Lighthouse Index](media/readme/Trail-Direct-lighthouse-desk.jpg)
 
-</details>
+
 
 > products.html
 
-<details>
-<summary>Profiles.html Screenshot</summary>
-  <br>
+
+Profiles.html Screenshot
+
 
   ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
   
-</details>
