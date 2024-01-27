@@ -13,7 +13,7 @@ Google Chrome web browser and the 'Inspect' function were used to capture the HT
 
 |Page|Validator|Result|
 | --- | --- | --- |
-| Home | --- | Pass |
+| Home | [home](media/readme/testing/index-html-sc.jpg) | Pass |
 | All Products | --- | Pass |
 | Product Detail | --- | Pass |
 | Contact | --- | Pass |
