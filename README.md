@@ -522,6 +522,8 @@ The main features of the website are documented in this section.
   
 </details>
 
+Testing Validation documentation can be found [here.](TESTING.md)
+
 <a name="bugs"></a>
 
 Known
