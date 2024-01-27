@@ -18,3 +18,24 @@ Google Chrome web browser and the 'Inspect' function were used to capture the HT
 | Contact | ![contact](media/readme/testing/contact-html-test.jpg) | Pass |
 | Blog | ![blog](media/readme/testing/blog-html-test.jpg) | Pass |
 | Register | ![register](media/readme/testing/register-htl-test.jpg) | Pass |
+
+
+### CSS
+
+W3C Jigsaw is a tool provided by the World Wide Web Consortium (W3C) that allows you to validate and check the correctness of your HTML and CSS code. It helps ensure that your web pages comply with the standards set by the W3C, promoting interoperability and accessibility.
+
+|File|Validator|Result|
+| --- | --- | --- |
+| Base | ![base](media/readme/testing/base-css-test.jpg) | Pass |
+| Checkout | ![checkout](media/readme/testing/checkout-css-test.jpg) | Pass |
+| Profile | ![profile](media/readme/testing/profile-css-test.jpg) | Pass |
+
+
+### JAVASCRIPT Validation
+
+JSHint is a JavaScript code validator that aids in improving the quality of your JavaScript code. 
+
+|File|Validator|Result|
+| Country.js | ![country](media/readme/testing/country-js-test.jpg) | Pass |
+| Stripe.js | ![strip](media/readme/testing/strip-js-test.jpg) | Pass |
+| toast.js | ![toast](media/readme/testing/toast-js-test.jpg) | Pass |
