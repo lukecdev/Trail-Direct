@@ -18,7 +18,6 @@ Go Back to [README.md](/README.md)
 
 
 
-<details>
 <summary>Home Page Tests</summary>
 <br>
 
@@ -37,9 +36,8 @@ Go Back to [README.md](/README.md)
 ||The socail links in footer open to the external pages|Pass|
 |Admin|The admin can access the admin only dropdown menu after logging-in |Pass|
 
-</details>
 
-<details>
+
 <summary>Products Page Tests</summary>
 <br>
 
@@ -49,9 +47,8 @@ Go Back to [README.md](/README.md)
 |Details| User can see product details button |Pass|
 |Admin| Admins can see edit and delete buttons on each product |Pass|
 
-</details>
 
-<details>
+
 <summary>Detailed Products Page Tests</summary>
 <br>
 
@@ -65,9 +62,8 @@ Go Back to [README.md](/README.md)
 || Tab section displays the product details |Pass|
 |Questions| Question tab section links to the general contact |Pass|
 
-</details>
 
-<details>
+
 <summary>Shopping Bag Tests</summary>
 <br>
 
@@ -77,9 +73,8 @@ Go Back to [README.md](/README.md)
 |Update quantity|Updating product new quantity and update the bag and price |Pass|
 |Remove product|Click on the remove button and the product is removed from bag |Pass|
 
-</details>
 
-<details>
+
 <summary>Checkout Tests</summary>
 <br>
 
@@ -92,9 +87,8 @@ Go Back to [README.md](/README.md)
 |Order|Order confirmation page after payment is successful |Pass|
 ||If an error when processing the order the site returns a 500 error without processing order |Pass|
 
-</details>
 
-<details>
+
 <summary>Blog Tests</summary>
 <br>
 
@@ -107,9 +101,8 @@ Go Back to [README.md](/README.md)
 ||Admins can delete blog post on page |Pass|
 
 
-</details>
 
-<details>
+
 <summary>Profile Tests</summary>
 <br>
 
@@ -124,7 +117,7 @@ Go Back to [README.md](/README.md)
 ||logged-in users can delete profile |Pass|
 ||logged-in users can view previous orders |Pass|
 
-</details>
+
 
 ## Google Lighthouse Testing
 
