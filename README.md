@@ -188,7 +188,7 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 |quantity|IntegerField|
 |lineitem_total|DecimalField|
 
-<summary>Contact App</summery>
+<summary>Contact App</summary>
 
 #### Contact Model
 
@@ -199,7 +199,7 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 |message|TextField|
 |reason|CharField|
 
-<summary>Home App</summery>
+<summary>Home App</summary>
 
 #### Newsletter Model
 
@@ -218,7 +218,7 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 |email|EmailField|
 |created_date|DateTimeField|
 
-<summary>Products App</summery>
+<summary>Products App</summary>
 
 #### Category Model
 
