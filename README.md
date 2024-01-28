@@ -37,18 +37,20 @@ In order to improve the business's visibility to search engines, I used an appro
 I set up a newsletter that users could sign up to recieve more details on products.
 A Facebook page was set up also to promote the business online and allow customers to contact the company through Facebook. [Facebook-Page](https://www.facebook.com/profile.php?id=61555703349226)
 
-<details>Facebook Page	
+
+<summary>FaceBook Page</summary>	
 <img src="media/trail-direc-facebook.jpg">
-</details>
+
+
 
 ### Keywords
 Appropriate and relevent keywords where used for the site in making it better suited for SEO. This will improve the websites visibility and help new users search the site. 
 I have included a screenshot of the head element from my base.html page that shows the keywords within the relevant meta tag.
 
-<details>
-    <summary>Keywords</summary>
-    <img src="media/meta-tags-td.jpg">
-</details>
+
+<summary>Keywords</summary>
+<img src="media/meta-tags-td.jpg">
+
 
 ### Sitemaps
 I generated a sitemap.xml file for the site using XML-Sitemaps and included it in the root level of the project repository. This will help search engines crawl the site more effectively.
@@ -59,7 +61,7 @@ I created a robots.txt at the root level of the project file. This tells search 
 ### Newsletter Marketing
 An embedded custom model newsletter form is included in the bottom of the home page. Users can subscribe to the newsletter to hear any updates or offers upcoming. This will help the business market to interested returning customers.
 
-
+## UX
 <a name="ux"></a>
 
 ### Color Pallette
@@ -113,6 +115,134 @@ Pre-project planning involved generating an entity relationship diagram. This wa
 	<summary>Entity Relationship Diagram</summary>
 <img src="media/readme/TD-ERG.jpg">
 </details>
+
+
+<summary> Database Structure</summary>
+<br>
+
+<summary>Profiles App</summary>
+
+#### UserProfile Model
+| id | Field |
+|--|--|
+|user|OneToOneField|
+|default_phone_number|CharField|
+|default_street_address1|CharField|
+|default_street_address2|CharField|
+|default_town_or_city|CharField|
+|default_county|CharField|
+|default_postcode|CharField|
+|default_country|CharField|
+|first_name|CharField|
+|last_name|CharField|
+|country|CharField|
+
+<summary>Blog App</summary>
+
+#### Post Model
+
+| id | Field |
+|--|--|
+|title|CharField|
+|slug|SlugField|
+|author|ForeignKey|
+|image_url|URLField|
+|image|ImageField|
+|excerpt|TextField|
+|updated_on|DateTimeField|
+|content|TextField|
+|created_on|DateTimeField|
+|status|IntegerField|
+
+<summary>Checkout App</summary>
+
+#### Order Model
+
+| id | Field |
+|--|--|
+|order_number|CharField|
+|user|ForeignKey|
+|full_name|CharField|
+|email|EmailField|
+|phone_number|CharField|
+|country|CountryField|
+|street_address1|CharField|
+|street_address2|CharField|
+|town_or_city|CharField|
+|postcode|CharField|
+|county|CharField|
+|date|DateTimeField|
+|deliver_cost|DecimalField|
+|order_total|DecimalField|
+|grand_total|DecimalField|
+|original_cart|TextField|
+|stripe_pid|CharField|
+
+#### OrderLineItem Model
+
+| id | Field |
+|--|--|
+|order|ForeignKey|
+|product|ForeignKey|
+|product_size|CharField|
+|quantity|IntegerField|
+|lineitem_total|DecimalField|
+
+<summary>Contact App</summery>
+
+#### Contact Model
+
+|id|Field|
+|--|--|
+|email|EmailField|
+|subject|CharField|
+|message|TextField|
+|reason|CharField|
+
+<summary>Home App</summery>
+
+#### Newsletter Model
+
+|id|Field|
+|--|--|
+|name|CharField|
+|email|EmailField|
+|created|DateTimeField|
+|subscribed|BooleanField|
+
+#### SubscribedUsers Model
+
+|id|Field|
+|--|--|
+|name|CharField|
+|email|EmailField|
+|created_date|DateTimeField|
+
+<summary>Products App</summery>
+
+#### Category Model
+
+|id|Field|
+|--|--|
+|name|CharField|
+|display_name|CharField|
+
+#### Product Model
+
+|id|Field|
+|--|--|
+|name|CharField|
+|category|CharField|
+|sku|CharField|
+|description|TextField|
+|price|DecimalField|
+|stock|IntegerField|
+|in_stock|BooleanField|
+|image_url|URLField|
+|image|ImageField|
+|rating|DecimalField|
+|created|DateTimeField|
+
 
 
 <a name="agile"></a>
@@ -375,158 +505,13 @@ The main features of the website are documented in this section.
 
 ## Testing 
 
-### Manual Testing
+Testing documentation can be found [here.](TESTING.md)
 
-<details>
-<summary>Account Registration Tests </summary>
-<br>
-
-| Test |Result  |
-| -- | -- |
-| User can create an account | Pass |
-| Verified user can log into their account | Pass  |
-| Verified user can log out | Pass  |
-|User is notified of logging in to account| Pass |
-|User is notified of logging out of account| Pass |
-|User receives email verification email| Pass |
-
-</details>
-
-<details>
-<summary>Home Page Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Navbar|Click on logo in Navbar redirects to Home |Pass|
-||Clicking on the links in Navbar redirects to the correct page |Pass|
-||Clicking on the links in Account redirects to the correct page |Pass|
-||Clicking on the bag icon redirects to shopping bag |Pass|
-|Searchbar|Type keywords returns correct results |Pass|
-|Hero section|Opening Home page the hero section loads as it should |Pass|
-||Click on the shop now button leads to products page |Pass|
-|Catagory Card| Click on the catagory card redirects to the correct catagory of products |Pass|
-|Newsletter| Enter valid email and a thank you for subscribing text appears |Pass|
-|Footer|The site links in footer open to the relevent pages|Pass|
-||The socail links in footer open to the external pages|Pass|
-|Admin|The admin can access the admin only dropdown menu after logging-in |Pass|
-
-</details>
-
-<details>
-<summary>Products Page Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Sorting| Click on product sorting in Navigation bar shows sorted products |Pass|
-|Details| User can see product details button |Pass|
-|Admin| Admins can see edit and delete buttons on each product |Pass|
-
-</details>
-
-<details>
-<summary>Detailed Products Page Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Product details|Opens the product page to show all the relevant information on selected product |Pass|
-|| Clicking on add to bag button adds selected product to bag |Pass|
-|| Clicking on add the quantity selector adjusts the product quantity |Pass|
-|| Product catagory of product is displayed |Pass|
-|| Product price is shown correctly |Pass|
-|| Tab section displays the product details |Pass|
-|Questions| Question tab section links to the general contact |Pass|
-
-</details>
-
-<details>
-<summary>Shopping Bag Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Shopping bag|Add product to the bag and it appears correctly in the bag |Pass|
-|Update quantity|Updating product new quantity and update the bag and price |Pass|
-|Remove product|Click on the remove button and the product is removed from bag |Pass|
-
-</details>
-
-<details>
-<summary>Checkout Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Payments|Users can successfully make a payment on orders |Pass|
-||Loged-In Users can successfully make a payment on orders |Pass|
-||If payment fails an error code will show and order is not submitted |Pass|
-|Email|Users recieve an email confirmation of email after payment |Pass|
-|Order|Order confirmation page after payment is successful |Pass|
-||If an error when processing the order the site returns a 500 error without processing order |Pass|
-
-</details>
-
-<details>
-<summary>Blog Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Blog|All Users can view the list of posted articles |Pass|
-||All Users can view selected detailed articles |Pass|
-|Admin|Admins can add blog post on page |Pass|
-||Admins can edit blog posts on page |Pass|
-||Admins can delete blog post on page |Pass|
-
-
-</details>
-
-<details>
-<summary>Profile Tests</summary>
-<br>
-
-|Section|Test|Pass/Fail|
-| ---| ---|---|
-|Profile|Only logged-in users can view profile section |Pass|
-||logged-in users can view profile details |Pass|
-||Only logged-in users can update personal details |Pass|
-||logged-in users can update order delivery details |Pass|
-||logged-in users can update personal details |Pass|
-||logged-in users can change password |Pass|
-||logged-in users can delete profile |Pass|
-||logged-in users can view previous orders |Pass|
-
-</details>
-
-### Google Lighthouse Testing
-
-> index.html
-
-<details>
-<summary>Index.html Screenshot</summary>
-  <br>
-
-  ![Google Lighthouse Index](media/readme/Trail-Direct-lighthouse-desk.jpg)
-
-</details>
-
-> products.html
-
-<details>
-<summary>Profiles.html Screenshot</summary>
-  <br>
-
-  ![Google Lighthouse Profiles](media/readme/Trail-Direct-lighthouse-profile.jpg) 
-  
-</details>
-
-Testing Validation documentation can be found [here.](TESTING.md)
+## Bugs
 
 <a name="bugs"></a>
 
-Known
+Known:
 	- When a product gets added to the basket, a toast is displayed but it does not disapear after the set time. It does also not close when the cornor 'x' is clicked. The user has to click on something else to remove the toast. I belive this is an issue with how my JS function is interacting with the toast html.
 	- In the shopping bag, the sub-total is still in $ instead of €. When an item is added to the baf, the icon changes but still has the $ instead of euro symbol. 
 	- The mobile site is not fully respionsive as some product images do not scale down correctly, this is an issue with the scaling and break points in the css.

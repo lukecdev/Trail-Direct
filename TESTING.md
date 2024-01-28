@@ -121,7 +121,6 @@ Go Back to [README.md](/README.md)
 
 ## Google Lighthouse Testing
 
-> index.html
 
 
 Index.html Screenshot
@@ -130,8 +129,6 @@ Index.html Screenshot
   ![Google Lighthouse Index](media/readme/Trail-Direct-lighthouse-desk.jpg)
 
 
-
-> products.html
 
 
 Profiles.html Screenshot
