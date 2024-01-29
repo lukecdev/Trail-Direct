@@ -821,6 +821,7 @@ The steps below describe how to fork or clone the repository if desired.
 	- Kim Bergstroem's Easy Keyboard project from [GitHub](https://github.com/KimBergstroem/PP5/tree/main) was used as inpiration in the website design, especially for the contact page and layout of the site.
 
 ### Acknowledgements
+
 	- My Mentor Chris Quinn, for the contunied helpful feedback through out my project.
 	- Jason and Oisin from Tutor support at Code Institute for their amazing support.
 	- Alan Bushell at Code Institute for the contunied support through out the course.
