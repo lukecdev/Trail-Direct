@@ -516,6 +516,7 @@ Known:
 	- In the shopping bag, the sub-total is still in $ instead of €. When an item is added to the baf, the icon changes but still has the $ instead of euro symbol. 
 	- The mobile site is not fully respionsive as some product images do not scale down correctly, this is an issue with the scaling and break points in the css.
 	- The search bar doesn't bring all the items forward. This is because the q value is not added correctly to new products added.
+	- Order confirmation email were not being sent after the order has been processed. This was perviously working and other emails such as password verification are sending. 
 
 <a name="deployment"></a>
 
